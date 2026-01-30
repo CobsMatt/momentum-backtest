@@ -1,6 +1,6 @@
 # Systematic Momentum Strategy (Python) — Backtest + Memo
 
-A rules-based **cross-sectional momentum** strategy tested on the **top 30 S&P 500 constituents by index weight** (as of current list 2026), with **SPY** as benchmark.
+A rules-based **cross-sectional momentum** strategy tested on the **top 30 S&P 500 constituents by index weight** (as of current list), with **SPY** as benchmark.
 
 ## What’s inside
 - `notebooks/momentum_backtest.ipynb` — full analysis + backtest
@@ -11,7 +11,7 @@ A rules-based **cross-sectional momentum** strategy tested on the **top 30 S&P 5
 - `figures/dark/` — optional “codey” dark charts for style
 
 ## Strategy (Baseline)
-- Signal: **12–1 momentum** (past 12 month return, skipping the most recent month)
+- Signal: **12–1 momentum** (past 12-month return, skipping most recent month)
 - Selection: top 10 stocks monthly (ranked by momentum)
 - Weighting: equal weight
 - Rebalance: monthly
@@ -40,5 +40,4 @@ Robustness (CAGR):
    ```bash
    py -m venv .venv
    .\.venv\Scripts\Activate.ps1
-
    py -m pip install -r requirements.txt
