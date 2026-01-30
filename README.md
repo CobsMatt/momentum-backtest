@@ -8,7 +8,7 @@ A rules-based **cross-sectional momentum** strategy tested on the **top 30 S&P 5
 - `data/results_monthly.csv` — monthly returns + turnover
 - `data/weights_monthly.csv` — monthly portfolio weights
 - `figures/light/` — charts for PDF/memo
-- `figures/dark/` — optional “codey” dark charts for style
+- `figures/dark/` — optional dark chart styles for lower brightness
 
 ## Strategy (Baseline)
 - Signal: **12–1 momentum** (past 12-month return, skipping most recent month)
@@ -40,4 +40,5 @@ Robustness (CAGR):
    ```bash
    py -m venv .venv
    .\.venv\Scripts\Activate.ps1
+
    py -m pip install -r requirements.txt
